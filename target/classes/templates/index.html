@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Diluvio</title>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{css/index.css}">
+    <script th:src="@{/js/index.js}"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-self-center">
+			   <div id="ipaddress" class="d-flex align-items-center justify-content-center">
+				   <div class="d-flex align-content-center flex-wrap">
+				   <h1 id="tittle">DILUVIO</h1>
+				   <input id="inputip" type="text" placeholder="Ingresa la IP"/>
+				   </div>
+			   </div>
+	    </div>
+
+    </div>
+    <div class="container">
+    <div id="attack" class="row justify-content-center align-self-center">Selecciona el ataque DDoS</div>
+    <div class="row"><br/></div>
+    
+		<div class="row">
+			<div class="col-sm text-center">
+				<button id="btndnsattack" type="button" class="btn btn-danger">DNS
+					Reflection</button>
+			</div>
+			<div class="col-sm text-center">
+				<button id="btnsynflood" type="button" class="btn btn-danger">Syn
+					Flood</button>
+			</div>
+			<div class="col-sm text-center">
+				<button id="btnudpflood" type="button" class="btn btn-danger">UDP
+					Flood</button>
+			</div>
+		</div>
+		
+
+		<div class="row">
+			<div class="col-sm text-center">
+				<button id="btnntpattack" type="button" class="btn btn-danger">NTP
+					Reflection</button>
+			</div>
+			
+			<div class="col-sm text-center">
+				<button id="btntcpflood" type="button" class="btn btn-danger">TCP
+					Connect Flood</button>
+			</div>
+			<div class="col-sm text-center">
+				<button id="btnicmpflood" type="button" class="btn btn-danger">ICMP
+					Flood</button>
+			</div>
+			
+			
+			
+		</div>
+		
+		<div class="row">
+		<div class="col-sm text-center">
+					
+			</div>
+		
+			<div class="col-sm text-center">
+					<button id="btnslowhttp" type="button" class="btn btn-danger">Slow
+						HTTP</button>
+			</div>
+			
+			<div class="col-sm text-center">
+					
+			</div>
+		</div>
+
+
+	</div>
+</body>
+</html>
